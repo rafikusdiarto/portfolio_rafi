@@ -1,0 +1,19 @@
+.navbar {
+    z-index: 2 !important;
+    transition: 0.3s ease-in;
+}
+
+.navbar a{
+    padding: 10px 0 10px 100px;
+    font-size: 20px;
+    color: rgb(23, 23, 27);
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #d43076;
+}
+
+.navbar.active{
+    background: rgb(255, 255, 255);
+}
