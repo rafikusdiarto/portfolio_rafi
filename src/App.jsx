@@ -26,7 +26,7 @@ const App = () => {
     AOS.init({
       once:true,
       duration:1000,
-      delay: 700
+      delay: 500
     })
   })
   return (
