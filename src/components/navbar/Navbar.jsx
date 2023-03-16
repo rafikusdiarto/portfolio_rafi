@@ -1,6 +1,5 @@
 import React from 'react'
 import './navbar.css'
-import {Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 const Nav = () => {
@@ -27,8 +26,8 @@ useEffect(() => {
           <a class="navbar-brand" href="#"><b>Rafi.</b></a>
           <ul class="navbar-nav">
             <li>
-              <Link to="/" style={{textDecoration: 'none'}}>Home</Link>
-              <Link to="/portfolioDetail" style={{textDecoration: 'none'}}>Portfolio</Link>
+              <a href="/" style={{textDecoration:'none'}}>Home</a>
+              <a href="/portfolio-detail" style={{textDecoration:'none'}}>Portfolio</a>
             </li>
           </ul>
         </div>

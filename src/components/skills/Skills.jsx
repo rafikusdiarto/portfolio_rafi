@@ -15,14 +15,14 @@ const Experience = () => {
   return (
     <>
       <section id="skills" class="skills">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-up">
             <h2>Skills</h2>
             <p>I am a backend web developer with more than 6 months experience. I use Backend libraries like Laravel, Node.Js, Express.Js</p>
           </div>
           <div class="container-fluid">
             <div class="row">
               <div class="col">
-                <div class="row mask-custom skills-content text-center p-3">
+                <div class="row mask-custom skills-content text-center p-3" data-aos="fade-right">
                   <div class="col-6 p-5">
                     <span>HTML/CSS</span>
                     <img class="ms-2" src="assets/img/skills/html.png" width={25}/>
@@ -42,7 +42,7 @@ const Experience = () => {
                     <p>50%</p>
                     <ProgressBar animated now={50} />         
                   </div>
-                  <div class="col-6 ">
+                  <div class="col-6 " data-aos="fade-up">
                     <img src="assets/img/skills.svg" width={500} alt="" />
                   </div>
                 </div>

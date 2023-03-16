@@ -1,10 +1,11 @@
 import React from 'react'
 import './portfolioDetail.css'
-
+import Navbar from '../navbar/Navbar'
 
 const PortfolioDetail = () => {
   return (
     <>
+    <Navbar/>
       <section id="portfolio">
         <div class="jumbotronPortfolio">
           <div class="row">

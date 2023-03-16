@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <>
         <section id="resume" class="resume section-bg">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
 
             <div class="section-title">
             <h2>Resume</h2>

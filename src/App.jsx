@@ -7,23 +7,47 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Loaders from './components/loaders/Loaders'
-import { Routes } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 // import PortfolioDetail from './components/portfolioDetail/PortfolioDetail'
 // import { Route, Routes } from "react-router-dom";
 
 
 const App = () => {
+  const [loading, setLoading] = useState(false)
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
+  }, [])
+
+  useEffect(()=>{
+    AOS.init({
+      once:true,
+      duration:1000,
+      delay: 700
+    })
+  })
   return (
-    <>
-      {/* <Loaders/> */}
-      <About/>
-      <Skills/>
-      <Resume/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
-    </>
-  )
+    <div className=''>
+      {
+        loading?
+        <Loaders/>
+        :
+        <div>
+          <Navbar/>
+          <About/>
+          <Skills/>
+          <Resume/>
+          <Portfolio/>
+          <Contact/>
+          <Footer/>
+        </div>
+      }
+
+    </div>
+  );
 }
 
 export default App

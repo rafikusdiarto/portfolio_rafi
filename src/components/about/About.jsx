@@ -18,7 +18,7 @@ export const about = () => {
         <h1>Jumbotron Example</h1>
         <p>Lorem ipsum...</p>
       </div> */}
-      <div class="jumbotron">
+      <div class="jumbotron" >
         
         <div class="container fluid inner-header">
           <div class="row justify-content-center">
