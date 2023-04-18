@@ -22,8 +22,8 @@ const Experience = () => {
           <div class="container-fluid">
             <div class="row">
               <div class="col">
-                <div class="row mask-custom skills-content text-center p-3" data-aos="fade-right" data-aos-once='true'>
-                  <div class="col-6 p-5">
+                <div class="row mask-custom d-flex skills-content text-center p-3" data-aos="fade-right" data-aos-once='true'>
+                  <div class="col-6">
                     <span>HTML/CSS</span>
                     <img class="ms-2" src="assets/img/skills/html.png" width={25}/>
                     <img class="ms-2" src="assets/img/skills/css-3.png" width={25}/>
@@ -42,9 +42,7 @@ const Experience = () => {
                     <p>50%</p>
                     <ProgressBar animated now={50} />         
                   </div>
-                  <div class="col-6 " data-aos="fade-up" data-aos-once='true'>
-                    <img src="assets/img/skills.svg" width={500} alt="" />
-                  </div>
+                  <img class='img-skill' src="assets/img/skills.svg" alt="" />
                 </div>
               </div>
             </div>

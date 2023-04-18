@@ -25,4 +25,8 @@
     height: 20px;
 }
 
+.skills-content .img-skill{
+    width: 100%; max-width: 500px; height: auto
+
+}
 
