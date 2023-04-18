@@ -32,9 +32,9 @@ const App = () => {
   return (
     <div className=''>
       {
-        loading?
-        <Loaders/>
-        :
+        // loading?
+        // <Loaders/>
+        // :
         <div>
           <Navbar/>
           <About/>
